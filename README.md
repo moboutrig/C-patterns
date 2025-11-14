@@ -1,18 +1,94 @@
 # The Algorithms - C # {#mainpage}
-<!-- the suffix in the above line is required for doxygen to consider this as the index page of the generated documentation site -->
+### Your C Programming Roadmap
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/TheAlgorithms/C)
-[![CodeQL CI](https://github.com/TheAlgorithms/C/actions/workflows/codeql.yml/badge.svg)](https://github.com/TheAlgorithms/C/actions/workflows/codeql_analysis.yml)
-[![Gitter chat](https://img.shields.io/badge/Chat-Gitter-ff69b4.svg?label=Chat&logo=gitter&style=flat-square)](https://gitter.im/TheAlgorithms)
-[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/TheAlgorithms/C/blob/master/CONTRIBUTING.md)
-![GitHub repo size](https://img.shields.io/github/repo-size/TheAlgorithms/C?color=red&style=flat-square)
-[![Doxygen CI](https://github.com/TheAlgorithms/C/workflows/Doxygen%20CI/badge.svg)](https://TheAlgorithms.github.io/C)
-[![Awesome CI](https://github.com/TheAlgorithms/C/workflows/Awesome%20CI%20Workflow/badge.svg)](https://github.com/TheAlgorithms/C/actions?query=workflow%3A%22Awesome+CI+Workflow%22)
-[![Income](https://img.shields.io/liberapay/receives/TheAlgorithms.svg?logo=liberapay)](https://liberapay.com/TheAlgorithms)
-[![Discord chat](https://img.shields.io/discord/808045925556682782.svg?logo=discord&colorB=5865F2)](https://the-algorithms.com/discord/)
-[![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/TheAlgorithms/donate)
+It's an excellent idea to approach this large repository with a clear plan. Instead of getting overwhelmed, you can build your knowledge step-by-step. This guide breaks down the folders by difficulty to create a personalized learning path for you.
 
-## Overview
+---
+
+### Level 1: Beginner (Focus on these first)
+
+These folders contain the absolute fundamentals of algorithms and data structures. Mastering these will give you a strong foundation in C and computational thinking.
+
+*   **`math/`**
+    *   **What it is**: Basic mathematical algorithms.
+    *   **Why it's for beginners**: These are small, self-contained problems that are perfect for learning C syntax, loops, and basic problem-solving.
+    *   **Where to start**: `factorial.c`, `gcd.c` (Greatest Common Divisor), `prime.c`, `fibonacci.c`.
+
+*   **`conversions/`**
+    *   **What it is**: Algorithms for converting numbers between different bases (like binary to decimal).
+    *   **Why it's for beginners**: Excellent for understanding how numbers are represented in memory and for practicing basic string manipulation.
+    *   **Where to start**: `binary_to_decimal.c`, `decimal_to_binary.c`.
+
+*   **`searching/`**
+    *   **What it is**: Essential algorithms for finding data within a collection.
+    *   **Why it's for beginners**: `linear_search.c` is one of the simplest algorithms to exist, and `binary_search.c` is a fundamental "divide and conquer" concept that every programmer must know.
+    *   **Where to start**: `linear_search.c`, `binary_search.c`.
+
+*   **`sorting/` (The Basics)**
+    *   **What it is**: Core algorithms for arranging data in order.
+    *   **Why it's for beginners (some of them)**: Simple sorting algorithms are great for understanding nested loops and array manipulation.
+    *   **Where to start**: `bubble_sort.c`, `insertion_sort.c`, `selection_sort.c`. (Save the more complex ones for the intermediate level!)
+
+*   **`data_structures/` (The Foundations)**
+    *   **What it is**: Implementations of the most important data structures. This is a crucial folder.
+    *   **Why it's for beginners**: Understanding these is key to becoming a competent programmer. They are the building blocks for solving almost any other problem.
+    *   **Where to start**:
+        *   `array/`: To understand basic array operations.
+        *   `linked_list/`: The cornerstone of dynamic data structures. Start with `singly_link_list.c`.
+        *   `stack/` and `queue/`: Fundamental "first-in, last-out" and "first-in, first-out" structures.
+
+---
+
+### Level 2: Intermediate (Explore these next)
+
+Once you're comfortable with the basics, these folders introduce more complex algorithms and data structures that build upon the fundamentals you've learned.
+
+*   **`data_structures/` (Advanced Parts)**
+    *   **What it is**: More complex data structures that often use recursion and more advanced pointer logic.
+    *   **Where to start**: `binary_trees/`, `graphs/`, `heap/`, `hash_table/`.
+
+*   **`sorting/` (Advanced Parts)**
+    *   **What it is**: More efficient but complex sorting algorithms.
+    *   **Why it's intermediate**: Algorithms like Merge Sort and Quick Sort use recursion and are more abstract than the simple sorts.
+    *   **Where to start**: `merge_sort.c`, `quick_sort.c`.
+
+*   **`cipher/`**
+    *   **What it is**: Simple encryption algorithms.
+    *   **Why it's intermediate**: Good practice for character and string manipulation, and they are slightly more complex than the basic math problems.
+    *   **Where to start**: `rot13.c`, `caesar.c`.
+
+*   **`dynamic_programming/` and `greedy_approach/`**
+    *   **What they are**: These are powerful problem-solving *techniques* rather than single algorithms.
+    *   **Why they are intermediate**: They require a more abstract way of thinking. It's best to tackle these after you are comfortable with recursion and basic data structures.
+
+*   **`games/`**
+    *   **What it is**: Simple command-line games.
+    *   **Why it's intermediate**: A fun way to apply your knowledge to a slightly larger project. `tic_tac_toe.c` is a great place to begin.
+
+---
+
+### Level 3: Advanced (Save these for later)
+
+These topics are highly specialized or require significant external knowledge (like advanced math or operating systems concepts). Don't worry about these until you are very confident in your C and algorithm skills.
+
+*   **`machine_learning/`**: Requires a strong background in mathematics (linear algebra, statistics).
+*   **`numerical_methods/`**: Involves concepts from calculus and numerical analysis.
+*   **`client_server/` and `graphics/`**: These are entire fields of computer science that involve interacting with operating systems, network sockets, or graphics libraries (like OpenGL), adding a lot of complexity.
+*   **`developer_tools/`**: Contains custom tools for debugging memory allocation. This is an advanced "meta" topic—it's a tool to help you find bugs in other C programs.
+*   **`leetcode/` and `project_euler/`**: These are large collections of solutions to competitive programming problems. They are excellent for practice *after* you have a good grasp of the intermediate topics.
+
+---
+
+### Project & Tooling Folders (Safe to ignore)
+
+These folders and files do not contain C algorithms for you to learn. They are used to manage, build, and test the project itself. You do not need to understand them to learn from the source code.
+
+*   `.github/`: Used for GitHub Actions (automated testing).
+*   `scripts/`: Contains helper scripts for project maintenance.
+*   `CMakeLists.txt`: Build system files used by CMake to compile the code.
+*   **All files starting with a dot (`.`):** These are configuration files (e.g., `.clang-format`, `.gitpod.yml`).
+*   **Markdown files**: `README.md`, `CONTRIBUTING.md`, etc. are documentation.
+
 
 The repository is a collection of open-source implementations of a variety of algorithms implemented in C and licensed under [GPLv3 License](https://github.com/TheAlgorithms/C/blob/master/LICENSE). The algorithms span a variety of topics from computer science, mathematics and statistics, data science, machine learning, engineering, etc.. The implementations and their associated documentations are meant to provide a learning resource for educators and students. Hence, one may find more than one implementation for the same objective but using different algorithm strategies and optimizations.
 
